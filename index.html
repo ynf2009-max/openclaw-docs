@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw 中文文档 | 自托管 AI 网关</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=PingFang+SC:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-icon">🦞</span><span>OpenClaw</span></a>
+            <div class="nav-links">
+                <a href="#quickstart">快速入门</a>
+                <a href="#architecture">核心架构</a>
+                <a href="#channels">渠道接入</a>
+                <a href="#skills">技能开发</a>
+                <a href="#advanced">高级主题</a>
+                <button class="theme-btn" id="themeToggle">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">自托管 AI 网关</div>
+            <h1 class="hero-title">你的 AI<br>随时随地</h1>
+            <p class="hero-subtitle">从任意聊天应用访问你的 AI 助手<br>数据完全自主掌控</p>
+            <div class="hero-actions">
+                <a href="#quickstart" class="btn btn-primary">开始使用 →</a>
+                <a href="https://github.com/openclaw/openclaw" target="_blank" class="btn btn-outline">GitHub</a>
+            </div>
+            <div class="hero-features">
+                <span>✓ 完全自托管</span>
+                <span>✓ 多渠道支持</span>
+                <span>✓ 开源免费</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="quickstart" class="section">
+        <div class="section-header">
+            <span class="section-tag">快速入门</span>
+            <h2>5 分钟上手</h2>
+            <p>安装并运行你的第一个 OpenClaw 实例</p>
+        </div>
+        <div class="cards-grid">
+            <a href="articles/quickstart/what-is-openclaw.html" class="card">
+                <div class="card-icon">📖</div>
+                <h3>什么是 OpenClaw</h3>
+                <p>了解项目定位、核心特性与适用场景</p>
+            </a>
+            <a href="articles/quickstart/installation.html" class="card">
+                <div class="card-icon">⚡</div>
+                <h3>安装指南</h3>
+                <p>Node.js 环境准备与 OpenClaw 安装</p>
+            </a>
+            <a href="articles/quickstart/first-run.html" class="card">
+                <div class="card-icon">🚀</div>
+                <h3>首次运行</h3>
+                <p>启动 Gateway、配置渠道、发送第一条消息</p>
+            </a>
+            <a href="articles/quickstart/dashboard.html" class="card">
+                <div class="card-icon">🖥️</div>
+                <h3>控制台</h3>
+                <p>使用 Web UI 管理会话与配置</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="architecture" class="section section-alt">
+        <div class="section-header">
+            <span class="section-tag">核心架构</span>
+            <h2>深入理解</h2>
+            <p>掌握 OpenClaw 的设计理念与核心机制</p>
+        </div>
+        <div class="arch-grid">
+            <a href="articles/architecture/gateway.html" class="arch-card">
+                <div class="arch-number">01</div>
+                <h3>Gateway 架构</h3>
+                <p>单进程网关设计、WebSocket 协议、事件驱动模型</p>
+            </a>
+            <a href="articles/architecture/agent.html" class="arch-card">
+                <div class="arch-number">02</div>
+                <h3>Agent 系统</h3>
+                <p>独立的工作空间、会话管理、记忆系统</p>
+            </a>
+            <a href="articles/architecture/multi-agent.html" class="arch-card">
+                <div class="arch-number">03</div>
+                <h3>多 Agent 路由</h3>
+                <p>绑定规则、消息分发、负载均衡</p>
+            </a>
+            <a href="articles/architecture/protocol.html" class="arch-card">
+                <div class="arch-number">04</div>
+                <h3>通信协议</h3>
+                <p>WebSocket 帧格式、请求响应模型、认证机制</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="channels" class="section">
+        <div class="section-header">
+            <span class="section-tag">渠道接入</span>
+            <h2>连接你的聊天应用</h2>
+            <p>支持主流即时通讯平台，一个网关全部搞定</p>
+        </div>
+        <div class="channels-grid">
+            <div class="channel-card"><div class="channel-icon">💬</div><h3>WhatsApp</h3><p>最流行的即时通讯工具</p><span class="channel-tag">官方</span></div>
+            <div class="channel-card"><div class="channel-icon">✈️</div><h3>Telegram</h3><p>Bot API 接入</p><span class="channel-tag">官方</span></div>
+            <div class="channel-card"><div class="channel-icon">🎮</div><h3>Discord</h3><p>游戏社区首选</p><span class="channel-tag">官方</span></div>
+            <div class="channel-card"><div class="channel-icon">📱</div><h3>iMessage</h3><p>Apple 生态消息服务</p><span class="channel-tag">官方</span></div>
+            <div class="channel-card"><div class="channel-icon">🏢</div><h3>飞书</h3><p>企业协作平台</p><span class="channel-tag">插件</span></div>
+            <div class="channel-card"><div class="channel-icon">💼</div><h3>Slack</h3><p>企业团队协作</p><span class="channel-tag">插件</span></div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+        <div class="section-header">
+            <span class="section-tag">技能开发</span>
+            <h2>扩展能力边界</h2>
+            <p>通过 Skills 系统为 Agent 增添新技能</p>
+        </div>
+        <div class="skills-layout">
+            <div class="skills-intro">
+                <h3>什么是 Skills</h3>
+                <p>OpenClaw 采用 AgentSkills 规范的技能系统。每个技能是一个独立模块，包含工具定义与使用说明。</p>
+            </div>
+            <div class="cards-grid cards-small">
+                <a href="articles/skills/skill-format.html" class="card card-small"><h3>技能格式</h3><p>SKILL.md 编写规范</p></a>
+                <a href="articles/skills/tool-invocation.html" class="card card-small"><h3>工具调用</h3><p>定义工具与参数</p></a>
+                <a href="articles/skills/clawhub.html" class="card card-small"><h3>ClawHub 市场</h3><p>发现与安装技能</p></a>
+                <a href="articles/skills/examples.html" class="card card-small"><h3>示例代码</h3><p>从示例学习</p></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="advanced" class="section">
+        <div class="section-header">
+            <span class="section-tag">高级主题</span>
+            <h2>进阶指南</h2>
+            <p>深度定制与生产环境部署</p>
+        </div>
+        <div class="adv-grid">
+            <a href="articles/advanced/plugins.html" class="adv-card"><div class="adv-icon">🔌</div><div><h3>插件开发</h3><p>创建自定义插件</p></div></a>
+            <a href="articles/advanced/remote-access.html" class="adv-card"><div class="adv-icon">🌐</div><div><h3>远程访问</h3><p>Tailscale VPN、SSH 隧道</p></div></a>
+            <a href="articles/advanced/security.html" class="adv-card"><div class="adv-icon">🔒</div><div><h3>安全配置</h3><p>认证与权限</p></div></a>
+            <a href="articles/advanced/deployment.html" class="adv-card"><div class="adv-icon">⚙️</div><div><h3>部署运维</h3><p>生产环境配置</p></div></a>
+            <a href="articles/advanced/nodes.html" class="adv-card"><div class="adv-icon">📲</div><div><h3>移动节点</h3><p>iOS/Android 节点</p></div></a>
+            <a href="articles/advanced/sandboxing.html" class="adv-card"><div class="adv-icon">🛡️</div><div><h3>沙箱隔离</h3><p>安全执行</p></div></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span class="logo-icon">🦞</span><span>OpenClaw 中文文档</span></div>
+            <div class="footer-links">
+                <a href="https://github.com/openclaw/openclaw" target="_blank">GitHub</a>
+                <a href="https://docs.openclaw.ai" target="_blank">官方文档</a>
+                <a href="https://discord.gg/clawd" target="_blank">Discord</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
